@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<main class="container">
+    <header>
+      <h1 id="title" class="pt-20px title">Form Survey Jurusan Terfavorit</h1>
+  <p id="description"><em>
+     Kami mengucapkan banyak terima kasih karena telah meluangkan waktunya untuk mengisi survey ini.
+  </em></p>
+  </header>
+  <form action="" id="survey-form">
+  <div class="mt-30px">
+    <label for="nama" id="name-label" class="label">Nama</label>
+    <input type="text" id="name" class="name input" placeholder="Masukkan nama anda" required/>
+  </div>
+  
+  <div class="mt-20px">
+    <label for="email" id="email-label" class="label">Email</label>
+  <input type="email" id="email" class="input" placeholder="Email" required/>
+  </div>
+  
+  <div class="mt-20px">
+    <label for="usia" id="number-label" class="label">Usia</label>
+  <input type="number" id="number" class="input" placeholder="Usia" min="14" max="99" required/>
+  <br>
+  </div>
+    
+  <div class="mt-20px">
+      <fieldset id="group1">
+      <legend>Jenis Kelamin</legend>
+      <input type="radio" name="jenis_kelamin" id="laki_laki" value="laki_laki"/>
+  <label for="laki_laki">Laki-Laki</label>
+        <br>
+  <input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan"/>
+  <label for="perempuan">Perempuan</label>
+        <br>
+      <input type="radio" name="jenis_kelamin" id="tidak_diketahui" value="tidak_diketahui"/>
+  <label for="tidak_diketahui">Memilih Untuk Tidak Menyebutkan</label>
+  <br>
+    </fieldset>
+  </div>
+  
+  
+  <div class="mt-20px">
+    <label for="pendidikan_terakhir" class="label">Pendidikan Terakhir</label>
+  <select name="pendidikan_terakhir" class="dropdown" id="pendidikan_terakhir">
+    <option value="" checked> -- Pilih Pendidikan Terakhir -- </option>
+    <option value="s3" checked>S3</option>
+    <option value="s2" checked>S2</option>
+    <option value="d3_s1" checked>D3 / S1</option>
+    <option value="sma" checked>Sekolah Menengah Atas / Sederajat</option>
+    <option value="smp" checked>Sekolah Menengah Pertama / Sederajat</option>
+    <option value="sd" checked>Sekolah Dasar / Sederajat</option>
+    <option value="tidak_sekolah" checked>Tidak Menempuh Pendidikan Formal</option>
+    <option value="tidak_diketahui" checked>Memilih Untuk Tidak Menyebutkan</option>
+  </select>
+  </div>
+  
+  <div class="mt-20px">
+    <label for="dropdown" class="label">Pekerjaan</label>
+  <select name="pekerjaan" id="dropdown" class="dropdown">
+    <option value="" checked> -- Pilih Pekerjaan Anda -- </option>
+    <option value="pengajar" checked>Pengajar</option>
+    <option value="pns" checked>Pegawai Negeri Sipil</option>
+    <option value="wiraswasta" checked>Wiraswasta</option>
+    <option value="karyawan" checked>Karyawan Swasta</option>
+    <option value="buruh" checked>Buruh</option>
+    <option value="freelancer" checked>Freelancer</option>
+    <option value="pelajar" checked>Pelajar / Mahasiswa</option>
+    <option value="tidak_bekerja" checked>Tidak / Belum Bekerja</option>
+    <option value="tidak_diketahui" checked>Lainnya</option>
+  </select>
+  </div>  
+    
+    
+  <div class="mt-20px">
+    
+  <label for="fakultas" class="label">Pilih Fakultas Dari Jurusan Favorit Anda</label>
+  <select name="fakultas" id="fakultas" class="dropdown">
+    <option value="" checked> -- Pilih Fakultas Dari Jurusan Favorit Anda -- </option>
+    <option value="fakultas_kesehatan" checked>Fakultas Kesehatan</option>
+    <option value="fakultas_mipa" checked>Fakultas Matematika dan IPA (MIPA)</option>
+    <option value="fakultas_teknik" checked>Fakultas Teknik</option>
+    <option value="fakultas_ekonomidanbisnis" checked>Fakultas Ekonomi dan Bisnis</option>
+    <option value="fakultas_komputerdanteknologi" checked>Fakultas Komputer dan Teknologi</option>
+    <option value="fakultas_sastradanbudaya" checked>Fakultas Sastra dan Budaya</option>
+    <option value="fakultas_sosialdanhumaniora" checked>Fakultas Sosial dan Humaniora</option>
+    <option value="fakultas_profesidanilmuterapan" checked>Fakultas Profesi dan Ilmu Terapan</option>
+    <option value="fakultas_pendidikan" checked>Fakultas Pendidikan</option>
+    <option value="fakultas_seni" checked>Fakultas Seni</option>
+    <option value="fakultas_ilmuolahraga" checked>Fakultas Ilmu Olahraga</option>
+    <option value="fakultas_pertanian" checked>Fakultas Pertanian</option>
+  </select>
+  </div>
+    
+    
+    <div class="mt-20px">
+    
+  <label for="jurusan" class="label">Pilih Jurusan Favorit Anda</label>
+  <select name="jurusan" id="jurusan" class="dropdown">
+    <option value="" checked> -- Pilih Jurusan Favorit Anda -- </option>
+    <option value="" checked>Mohon Pilih Dahulu Fakultasnya !!! </option>
+  </select>
+  </div>
+    
+  <div class="mt-30px">
+    <textarea name="alasan" class="textarea" id="" cols="30" rows="10" placeholder="Apa Alasan Anda menyukai jurusan tersebut ? ">
+  </textarea>  
+  </div>
+    
+    <div class="mt-20px">
+      <input type="checkbox" name="perjanjian1" id="perjanjian1" value="perjanjian1"/>
+      <label for="perjanjian1">
+        <span><small>
+        Saya menjamin bahwa data yang saya isi berdasarkan fakta.
+      </small></span>
+      </label>
+      <br>
+      <input type="checkbox" name="perjanjian2" id="perjanjian2" value="perjanjian1"/>
+      <label for="perjanjian2">
+        <span><small>
+        Saya tidak keberatan jika saya isi dapat dipergunakan untuk tujuan penelitian.
+      </small></span>
+      </label>
+    </div>
+  <button id="submit" class="mt-30px button">Submit</button>
+    
+  </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
